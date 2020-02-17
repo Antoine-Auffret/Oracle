@@ -1,8 +1,8 @@
 package oracle;
 
-public class ServiceB extends Service implements ServiceBInterface{
+public class Miracle extends Service implements MiracleInterface{
 
-    public ServiceB(){
+    public Miracle(){
     }
 
     public void methodeC(){
@@ -17,11 +17,11 @@ public class ServiceB extends Service implements ServiceBInterface{
 
     public void methodeE(){
 
-        Oracle.getInstance().getServiceAInterface().methodeA();
+        Oracle.getInstance().getConseilInterface().methodeA();
     }
 
     public void methodeF(){
 
-        Oracle.getInstance().getServiceA().methodeB();
+        Oracle.getInstance().getConseil().methodeB();
     }
 }

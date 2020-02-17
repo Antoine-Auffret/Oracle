@@ -3,13 +3,15 @@ package oracle;
 public class Oracle {
 
     private static Oracle instance = new Oracle();
-    private ServiceA serviceA;
-    private ServiceB serviceB;
+    private Conseil conseil;
+    private Miracle miracle;
+    private Ecoute ecoute;
 
     private Oracle() {
 
-        serviceA = new ServiceA();
-        serviceB = new ServiceB();
+        conseil = new Conseil();
+        miracle = new Miracle();
+        ecoute = new Ecoute();
     }
 
     public static Oracle getInstance() {
@@ -27,18 +29,23 @@ public class Oracle {
         System.out.println("publicPrint : " + m);
     }
 
-    public ServiceAInterface getServiceAInterface() {
+    public ConseilInterface getConseilInterface() {
 
-        return (ServiceAInterface)serviceA;
+        return (ConseilInterface)conseil;
     }
 
-    public ServiceBInterface getServiceBInterface() {
+    public MiracleInterface getMiracleInterface() {
 
-        return (ServiceBInterface)serviceB;
+        return (MiracleInterface)miracle;
     }
 
-    ServiceA getServiceA() {
+    public EcouteInterface getEcouteInterface() {
 
-        return serviceA;
+        return (EcouteInterface)ecoute;
+    }
+
+    Conseil getConseil() {
+
+        return conseil;
     }
 }

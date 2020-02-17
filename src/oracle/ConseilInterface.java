@@ -1,6 +1,6 @@
 package oracle;
 
-public interface ServiceAInterface {
+public interface ConseilInterface {
 
     public void methodeA();
 }
