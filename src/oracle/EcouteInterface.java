@@ -1,5 +1,8 @@
 package oracle;
 
 public interface EcouteInterface {
-    public void methodeG();
+    
+    public void sansRepondre();
+    public void repondreConseil();
+    public void realiserMiracle();
 }

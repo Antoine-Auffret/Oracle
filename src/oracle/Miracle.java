@@ -5,23 +5,8 @@ public class Miracle extends Service implements MiracleInterface{
     public Miracle(){
     }
 
-    public void methodeC(){
+    public void realiserMiracle(){
 
-        Oracle.getInstance().defaultPrint("C");
-    }
-
-    public void methodeD(){
-
-        Oracle.getInstance().publicPrint("D");
-    }
-
-    public void methodeE(){
-
-        Oracle.getInstance().getConseilInterface().methodeA();
-    }
-
-    public void methodeF(){
-
-        Oracle.getInstance().getConseil().methodeB();
+        Oracle.getInstance().defaultPrint("Réaliser des miracles");
     }
 }

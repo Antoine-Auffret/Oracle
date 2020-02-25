@@ -5,13 +5,13 @@ public class Conseil extends Service implements ConseilInterface{
     public Conseil(){
     }
 
-    public void methodeA(){
+    public void sansRaison(){
 
-        Oracle.getInstance().defaultPrint("A");
+        Oracle.getInstance().defaultPrint("Fournir des conseils sans aucune raison");
     }
 
-    public void methodeB(){
+    public void fonctionDemande(){
 
-        Oracle.getInstance().publicPrint("B");
+        Oracle.getInstance().publicPrint("Fournir des conseils en fonction de la demande");
     }
 }

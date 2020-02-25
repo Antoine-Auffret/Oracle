@@ -2,5 +2,6 @@ package oracle;
 
 public interface ConseilInterface {
 
-    public void methodeA();
+    public void sansRaison();
+    public void fonctionDemande();
 }

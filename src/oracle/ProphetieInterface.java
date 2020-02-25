@@ -1,5 +1,8 @@
 package oracle;
 
 public interface ProphetieInterface {
-    public void methodeH();
+
+    public void enoncerProphetie();
+    public void predireProphetie();
+    public void realiserProphetie();
 }

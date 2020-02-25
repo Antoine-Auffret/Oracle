@@ -5,13 +5,15 @@ public class Main {
     public static void main(String args[]){
 
         Oracle.getInstance().publicPrint("main");
-        Oracle.getInstance().getConseilInterface().methodeA();
-        Oracle.getInstance().getMiracleInterface().methodeC();
-        Oracle.getInstance().getMiracleInterface().methodeD();
-        Oracle.getInstance().getMiracleInterface().methodeE();
-        Oracle.getInstance().getMiracleInterface().methodeF();
-        Oracle.getInstance().getEcouteInterface().methodeG();
-        Oracle.getInstance().getProphetieInterface().methodeH();
+        Oracle.getInstance().getConseilInterface().sansRaison();
+        Oracle.getInstance().getConseilInterface().fonctionDemande();
+        Oracle.getInstance().getMiracleInterface().realiserMiracle();
+        Oracle.getInstance().getEcouteInterface().sansRepondre();
+        Oracle.getInstance().getEcouteInterface().repondreConseil();
+        Oracle.getInstance().getEcouteInterface().realiserMiracle();
+        Oracle.getInstance().getProphetieInterface().enoncerProphetie();
+        Oracle.getInstance().getProphetieInterface().predireProphetie();
+        Oracle.getInstance().getProphetieInterface().realiserProphetie();
     }
 }
 
