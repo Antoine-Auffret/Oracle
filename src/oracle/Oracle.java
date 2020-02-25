@@ -6,12 +6,14 @@ public class Oracle {
     private Conseil conseil;
     private Miracle miracle;
     private Ecoute ecoute;
+    private Prophetie prophetie;
 
     private Oracle() {
 
         conseil = new Conseil();
         miracle = new Miracle();
         ecoute = new Ecoute();
+        prophetie = new Prophetie();
     }
 
     public static Oracle getInstance() {
@@ -42,6 +44,11 @@ public class Oracle {
     public EcouteInterface getEcouteInterface() {
 
         return (EcouteInterface)ecoute;
+    }
+
+    public ProphetieInterface getProphetieInterface() {
+
+        return (ProphetieInterface)prophetie;
     }
 
     Conseil getConseil() {

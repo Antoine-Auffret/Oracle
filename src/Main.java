@@ -1,4 +1,4 @@
-import oracle.Oracle;
+import oracle.*;
 
 public class Main {
 
@@ -11,6 +11,7 @@ public class Main {
         Oracle.getInstance().getMiracleInterface().methodeE();
         Oracle.getInstance().getMiracleInterface().methodeF();
         Oracle.getInstance().getEcouteInterface().methodeG();
+        Oracle.getInstance().getProphetieInterface().methodeH();
     }
 }
 
