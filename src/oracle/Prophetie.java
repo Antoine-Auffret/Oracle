@@ -1,6 +1,7 @@
 package oracle;
 
 public class Prophetie extends Service implements ProphetieInterface{
+
     public Prophetie(){
     }
 

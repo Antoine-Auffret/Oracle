@@ -3,17 +3,24 @@ package oracle;
 public class Oracle {
 
     private static Oracle instance = new Oracle();
-    private Conseil conseil;
+    private PiedsNoirs piedsNoirs;
+    private OreilleCasse oreilleCasse;
+    private HuronsWendat huronsWendat;
+    private Mohawks mohawks;
+    /*private Conseil conseil;
     private Miracle miracle;
     private Ecoute ecoute;
-    private Prophetie prophetie;
+    private Prophetie prophetie;*/
 
     private Oracle() {
-
-        conseil = new Conseil();
+        piedsNoirs = new PiedsNoirs();
+        oreilleCasse = new OreilleCasse();
+        huronsWendat = new HuronsWendat();
+        mohawks = new Mohawks();
+        /*conseil = new Conseil();
         miracle = new Miracle();
         ecoute = new Ecoute();
-        prophetie = new Prophetie();
+        prophetie = new Prophetie();*/
     }
 
     public static Oracle getInstance() {
@@ -31,7 +38,23 @@ public class Oracle {
         System.out.println("publicPrint : " + m);
     }
 
-    public ConseilInterface getConseilInterface() {
+    public PiedsNoirs getPiedsNoirs() {
+        return (PiedsNoirs)piedsNoirs;
+    }
+
+    public OreilleCasse getOreilleCasse() {
+        return (OreilleCasse)oreilleCasse;
+    }
+
+    public HuronsWendat getHuronsWendat() {
+        return (HuronsWendat)huronsWendat;
+    }
+
+    public Mohawks getMohawks() {
+        return (Mohawks)mohawks;
+    }
+
+    /*public ConseilInterface getConseilInterface() {
 
         return (ConseilInterface)conseil;
     }
@@ -49,10 +72,5 @@ public class Oracle {
     public ProphetieInterface getProphetieInterface() {
 
         return (ProphetieInterface)prophetie;
-    }
-
-    Conseil getConseil() {
-
-        return conseil;
-    }
+    }*/
 }

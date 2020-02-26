@@ -1,6 +1,7 @@
 package oracle;
 
 public class Ecoute extends Service implements EcouteInterface{
+
     public Ecoute(){
     }
 
