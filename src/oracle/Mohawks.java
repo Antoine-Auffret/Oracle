@@ -2,7 +2,10 @@ package oracle;
 
 public class Mohawks extends Prophetie {
 
-    public Mohawks() {
+    private String nomOracle;
+
+    public Mohawks(String nomOracle) {
+        this.nomOracle = nomOracle;
     }
 
     @Override
@@ -18,5 +21,12 @@ public class Mohawks extends Prophetie {
     @Override
     public void realiserProphetie() {
         super.realiserProphetie();
+    }
+
+    @Override
+    public String toString() {
+        return "Mohawks{" +
+                "nomOracle='" + nomOracle + '\'' +
+                '}';
     }
 }

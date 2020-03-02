@@ -2,7 +2,10 @@ package oracle;
 
 public class OreilleCasse extends Ecoute {
 
-    public OreilleCasse() {
+    private String nomOracle;
+
+    public OreilleCasse(String nomOracle) {
+        this.nomOracle = nomOracle;
     }
 
     @Override
@@ -18,5 +21,12 @@ public class OreilleCasse extends Ecoute {
     @Override
     public void realiserMiracle() {
         super.realiserMiracle();
+    }
+
+    @Override
+    public String toString() {
+        return "OreilleCasse{" +
+                "nomOracle='" + nomOracle + '\'' +
+                '}';
     }
 }

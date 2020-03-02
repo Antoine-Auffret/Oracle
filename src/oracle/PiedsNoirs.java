@@ -2,7 +2,10 @@ package oracle;
 
 public class PiedsNoirs extends Conseil {
 
-    public PiedsNoirs() {
+    private String nomOracle;
+
+    public PiedsNoirs(String nomOracle) {
+        this.nomOracle = nomOracle;
     }
 
     @Override
@@ -13,5 +16,12 @@ public class PiedsNoirs extends Conseil {
     @Override
     public void fonctionDemande() {
         super.fonctionDemande();
+    }
+
+    @Override
+    public String toString() {
+        return "PiedsNoirs{" +
+                "nomOracle='" + nomOracle + '\'' +
+                '}';
     }
 }
